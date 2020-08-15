@@ -13,6 +13,9 @@
 		D0524B6524D761A7005810CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0524B6324D761A7005810CA /* Main.storyboard */; };
 		D0524B6724D761AB005810CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0524B6624D761AB005810CA /* Assets.xcassets */; };
 		D0524B6A24D761AB005810CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0524B6824D761AB005810CA /* LaunchScreen.storyboard */; };
+		D0524B7A24D76264005810CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0524B7924D76264005810CA /* NetworkService.swift */; };
+		D0524B7C24D76275005810CA /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0524B7B24D76275005810CA /* NetworkDataFetcher.swift */; };
+		D0524B7F24D76299005810CA /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0524B7E24D76299005810CA /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D0524B6624D761AB005810CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0524B6924D761AB005810CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0524B6B24D761AB005810CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0524B7924D76264005810CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D0524B7B24D76275005810CA /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		D0524B7E24D76299005810CA /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		D0524B5C24D761A7005810CA /* JSONWebinar */ = {
 			isa = PBXGroup;
 			children = (
-				D0524B5D24D761A7005810CA /* AppDelegate.swift */,
-				D0524B5F24D761A7005810CA /* SceneDelegate.swift */,
-				D0524B6124D761A7005810CA /* ViewController.swift */,
+				D0524B8024D7629D005810CA /* Models */,
+				D0524B8124D762C0005810CA /* Controllers */,
+				D0524B7D24D7627F005810CA /* Networking */,
 				D0524B6324D761A7005810CA /* Main.storyboard */,
 				D0524B6624D761AB005810CA /* Assets.xcassets */,
 				D0524B6824D761AB005810CA /* LaunchScreen.storyboard */,
 				D0524B6B24D761AB005810CA /* Info.plist */,
 			);
 			path = JSONWebinar;
+			sourceTree = "<group>";
+		};
+		D0524B7D24D7627F005810CA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D0524B7924D76264005810CA /* NetworkService.swift */,
+				D0524B7B24D76275005810CA /* NetworkDataFetcher.swift */,
+				D0524B8224D762D5005810CA /* Delegates */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D0524B8024D7629D005810CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0524B7E24D76299005810CA /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0524B8124D762C0005810CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0524B6124D761A7005810CA /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D0524B8224D762D5005810CA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D0524B5D24D761A7005810CA /* AppDelegate.swift */,
+				D0524B5F24D761A7005810CA /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +181,10 @@
 			files = (
 				D0524B6224D761A7005810CA /* ViewController.swift in Sources */,
 				D0524B5E24D761A7005810CA /* AppDelegate.swift in Sources */,
+				D0524B7F24D76299005810CA /* SearchResponse.swift in Sources */,
+				D0524B7A24D76264005810CA /* NetworkService.swift in Sources */,
 				D0524B6024D761A7005810CA /* SceneDelegate.swift in Sources */,
+				D0524B7C24D76275005810CA /* NetworkDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
